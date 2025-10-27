@@ -6,3 +6,5 @@ Paleta de colores:
 Tipgrafía:
 Estructura Inicial:
 
+index.html
+infoViajes.html
