@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Proyecto web</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Logo Web" width="64" height="64">
+      <h1>Contacta con nosotros</h1>
+      <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+      </ul>
+     </nav>
+    </header>
+    <main>
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form action="#" method="post" autocomplete="on">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,}" autofocus>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="asunto">Asunto:</label>
+          <select id="asunto" name="asunto" required>
+            <option value="">Selecciona</option>
+            <option value="info">Información</option>
+            <option value="reserva">Reserva</option>
+            <option value="sugerencia">Sugerencia</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <fieldset>
+          <legend>Preferencias de contacto</legend>
+          <label for="telefono">
+            <input type="checkbox" id="telefono" name="preferencia" value="telefono"> Teléfono
+          </label>
+          <label for="emailpref">
+            <input type="checkbox" id="emailpref" name="preferencia" value="email"> Email
+          </label>
+          <label>
+            <input type="radio" name="horario" value="mañana" required> Mañana
+          </label>
+          <label>
+            <input type="radio" name="horario" value="tarde"> Tarde
+          </label>
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <a href="#top" class="ancla">Ir arriba</a>
+  </main>
+  <footer>
+    <p>&copy; 2025 Viajes. <a href="mailto:info@viajes.com">Email directo</a></p>
+  </footer>
+  </body>
+</html>
