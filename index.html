@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Proyecto HTML y CSS - Lenguajes de Marcas (1º DAM)">
   <title>viaj.es - Tu agencia de viajes para jubilados</title>
+  <link rel="stylesheet" href="css/style.css"> <!--Esto para que cargue el css-->
 </head>
 <body>
   <header>
     <img src="imgs/logo.png" alt="Logo viaj.es" width="300">
-    <h1>viaj.es</h1>
+    <h1>¡La mejor agencia de viajes que hay!</h1>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -31,14 +32,25 @@
     <section>
       <h2>Destinos destacados</h2>
       <article>
-        <h3>Roma</h3>
-        <img src="img/destino1.jpg" alt="Vista del Coliseo en Roma" width="300">
+        <div class="imagen-container">
+          <h3>Roma</h3>
+          <img src="imgs/roma.png" alt="Vista del Coliseo en Roma" width="300">
+        </div>
         <p>Disfruta de la historia y la gastronomía italiana en un viaje inolvidable.</p>
       </article>
       <article>
-        <h3>París</h3>
-        <img src="img/destino2.jpg" alt="Torre Eiffel de París" width="300">
+        <div class="imagen-container">
+          <h3>París</h3>
+          <img src="imgs/paris.png" alt="Torre Eiffel de París" width="300">
+        </div>
         <p>Una escapada romántica llena de cultura, arte y encanto europeo.</p>
+      </article>
+      <article>
+        <div class="imagen-container">
+          <h3>Amsterdam</h3>
+          <img src="imgs/amsterdam.png" alt="Torre Eiffel de París" width="300">
+        </div>
+        <p>¡Diviértete en Ámsterdam como nunca has hecho!</p>
       </article>
     </section>
   </main>
