@@ -27,7 +27,3 @@ Sitio web de agencia de viajes enfocada en jubilados.
 - Fondo blanco
 - Tipografía estilo *Times New Roman* o similar, ligeramente más gruesa.
 - Colores brillantes (verde lima, rojo, azul claro, turquesa) en menús y botones (se aplicarán en fase CSS).
-
----
-
-¿Quieres que te prepare también un ejemplo de cómo quedaría el **efecto de “imágenes con texto dentro”** (por ejemplo, botones visuales de ciudades en `destinos.html`), aunque solo estructuralmente con HTML sin CSS todavía?
