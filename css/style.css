@@ -11,17 +11,28 @@ header {
   color: white;
   text-align: center;
 }
-nav ul {
+.navbar ul {
   background-color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li a {
   font-weight: bold;
   font-size: 200%;
   padding: 8px 30px;
-  display: inline-block;
+  display: block;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
 }
+
 /* Para la lista al pasar el ratón */
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.3);
-  color: #000;
 }
 .imagen-container {
   position: relative;
