@@ -1,1 +1,7 @@
-
+<!ELEMENT tablaDestinos (destino+)>
+<!ELEMENT destino (ciudad, pais, duracion, coste)>
+<!ATTLIST destino id CDATA #REQUIRED>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>
+<!ELEMENT coste (#PCDATA)>
