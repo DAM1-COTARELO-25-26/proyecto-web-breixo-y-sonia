@@ -1,1 +1,22 @@
-dfajkndslafnm
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tablaDestinos SYSTEM "tablaDes.dtd">
+<tablaDestinos>
+    <destino id="1">
+        <ciudad>Roma</ciudad>
+        <pais>Italia</pais>
+        <duracion>7 dias</duracion>
+        <coste>890€</coste>
+    </destino>
+    <destino id="2">
+        <ciudad>Paris</ciudad>
+        <pais>Francia</pais>
+        <duracion>5 dias</duracion>
+        <coste>750€</coste>
+    </destino>
+    <destino id="3">
+        <ciudad>Praga</ciudad>
+        <pais>Republica Checa</pais>
+        <duracion>6 dias</duracion>
+        <coste>820€</coste>
+    </destino>
+</tablaDestinos>
