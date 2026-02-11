@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE agencia SYSTEM "tablaDes.dtd">
-<agencia>
+<agencia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="viajes.xsd">
     <viaje id="V-001" disponible="true">
         <destino destacado="true">Roma Imperial</destino>
         <pais>Italia</pais>
