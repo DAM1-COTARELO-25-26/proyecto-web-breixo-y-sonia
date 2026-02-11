@@ -1,22 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE tablaDestinos SYSTEM "tablaDes.dtd">
-<tablaDestinos>
-    <destino id="1">
-        <ciudad>Roma</ciudad>
+<!DOCTYPE agencia SYSTEM "tablaDes.dtd">
+<agencia>
+    <viaje id="V-001" disponible="true">
+        <destino destacado="true">Roma Imperial</destino>
         <pais>Italia</pais>
-        <duracion>7 dias</duracion>
-        <coste>890€</coste>
-    </destino>
-    <destino id="2">
-        <ciudad>Paris</ciudad>
+        <precio moneda="EUR">890.00</precio>
+        <duracion dias="7" noches="6" />
+        <fechaSalida>2026-04-15</fechaSalida>
+        <descripcion>Un recorrido por el Coliseo y el Vaticano con guías especializados en movilidad reducida.</descripcion>
+        <serviciosIncluidos>
+            <servicio>Pensión completa</servicio>
+            <servicio>Seguro médico senior</servicio>
+            <servicio>Traslados puerta a puerta</servicio>
+        </serviciosIncluidos>
+    </viaje>
+
+    <viaje id="V-002" disponible="true">
+        <destino destacado="false">París Romántico</destino>
         <pais>Francia</pais>
-        <duracion>5 dias</duracion>
-        <coste>750€</coste>
-    </destino>
-    <destino id="3">
-        <ciudad>Praga</ciudad>
-        <pais>Republica Checa</pais>
-        <duracion>6 dias</duracion>
-        <coste>820€</coste>
-    </destino>
-</tablaDestinos>
+        <precio moneda="EUR">750.00</precio>
+        <duracion dias="5" noches="4" />
+        <fechaSalida>2026-05-10</fechaSalida>
+        <descripcion>Paseo por el Sena y visita guiada al Louvre sin colas.</descripcion>
+        <serviciosIncluidos>
+            <servicio>Vuelos incluidos</servicio>
+            <servicio>Hotel 4 estrellas</servicio>
+        </serviciosIncluidos>
+    </viaje>
+
+    <viaje id="V-003" disponible="true">
+        <destino destacado="true">Praga Histórica</destino>
+        <pais>República Checa</pais>
+        <precio moneda="EUR">820.00</precio>
+        <duracion dias="6" noches="5" />
+        <fechaSalida>2026-06-01</fechaSalida>
+        <descripcion>Crucero por el río Moldava y cena con folclore local.</descripcion>
+        <serviciosIncluidos>
+            <servicio>Guía en español</servicio>
+            <servicio>Entradas a museos</servicio>
+        </serviciosIncluidos>
+    </viaje>
+
+    <viaje id="V-010" disponible="false">
+        <destino destacado="false">Canales de Ámsterdam</destino>
+        <pais>Países Bajos</pais>
+        <precio moneda="EUR">950.00</precio>
+        <duracion dias="5" noches="4" />
+        <fechaSalida>2026-07-20</fechaSalida>
+        <descripcion>Ruta por los campos de tulipanes y los molinos históricos.</descripcion>
+        <serviciosIncluidos>
+            <servicio>Alquiler de bicicletas adaptadas</servicio>
+            <servicio>Catas de queso</servicio>
+        </serviciosIncluidos>
+    </viaje>
+
+</agencia>
