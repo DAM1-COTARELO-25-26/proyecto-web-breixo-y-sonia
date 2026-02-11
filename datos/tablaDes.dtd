@@ -1,7 +1,24 @@
-<!ELEMENT tablaDestinos (destino+)>
-<!ELEMENT destino (ciudad, pais, duracion, coste)>
-<!ATTLIST destino id CDATA #REQUIRED>
-<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT agencia (viaje+)>
+<!ELEMENT viaje (destino, pais, precio, duracion, fechaSalida, descripcion, serviciosIncluidos)>
+<!ATTLIST viaje 
+          id ID #REQUIRED
+          disponible (true|false) "true">
+
+<!ELEMENT destino (#PCDATA)>
+<!ATTLIST destino destacado (true|false) #IMPLIED>
+
 <!ELEMENT pais (#PCDATA)>
-<!ELEMENT duracion (#PCDATA)>
-<!ELEMENT coste (#PCDATA)>
+
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA #FIXED "EUR">
+
+<!ELEMENT duracion EMPTY>
+<!ATTLIST duracion 
+          dias CDATA #REQUIRED
+          noches CDATA #REQUIRED>
+
+<!ELEMENT fechaSalida (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT serviciosIncluidos (servicio*)>
+<!ELEMENT servicio (#PCDATA)>
