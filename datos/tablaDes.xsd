@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:annotation>
+    <xs:documentation>
+      Validación para el catálogo de viajes de viaj.es (1º DAM).
+    </xs:documentation>
+  </xs:annotation>
+  
+  <xs:element name="agencia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="viaje" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              
+              <xs:element name="destino">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="tipoNombreCorta">
+                      <xs:attribute name="destacado" type="xs:boolean" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="pais" type="xs:string"/>
+
+              <xs:element name="precio">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="tipoPrecio">
+                      <xs:attribute name="moneda" type="xs:string" fixed="EUR"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="duracion">
+                <xs:complexType>
+                  <xs:attribute name="dias" type="xs:positiveInteger" use="required"/>
+                  <xs:attribute name="noches" type="xs:integer" use="required"/>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name="fechaSalida" type="xs:date"/>
+              
+              <xs:element name="descripcion" type="xs:string"/>
+
+              <xs:element name="serviciosIncluidos">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="servicio" type="xs:string" minOccurs="0" maxOccurs="10"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+            </xs:sequence>
+            <xs:attribute name="id" type="tipoIDViaje" use="required"/>
+            <xs:attribute name="disponible" type="xs:boolean" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="tipoNombreCorta">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="3"/>
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoPrecio">
+    <xs:restriction base="xs:decimal">
+      <xs:fractionDigits value="2"/>
+      <xs:minInclusive value="100.00"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoIDViaje">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="V-[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
