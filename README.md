@@ -22,6 +22,18 @@ Sitio web de agencia de viajes enfocada en jubilados.
 │ └── destino3.jpg
 └── README.md
 
+## Estructura de Datos XML 
+### Descripción 
+Este proyecto utiliza XML para estructurar [descripción del tipo de datos]. 
+### Archivos
+- **`/datos/tablaDestinos.xml`**: Indica la descripción del contenido
+- **`/datos/tablaDes.dtd`**: Validador DTD
+- **`/datos/tablaDes.xsd`**: Schema XSD con restricciones avanzadas 
+### Estructura principal 
+Explica que estructura tiene tu árbol de XML por niveles, con sus respectivos 
+atributos, etc. 
+### Validación 
+Ver documentación completa en [`/datos/validacion.md`](datos/validacion.md) 
 
 ## Paleta y tipografía
 - Fondo blanco
