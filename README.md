@@ -10,7 +10,7 @@ Sitio web de agencia de viajes enfocada en jubilados.
 - **contacto.html** → Formulario de contacto y datos de la agencia.  
 
 ## Estructura de carpetas
-
+```
 /viajes/
 ├── index.html
 ├── destinos.html
@@ -21,7 +21,7 @@ Sitio web de agencia de viajes enfocada en jubilados.
 │ ├── destino2.jpg
 │ └── destino3.jpg
 └── README.md
-
+```
 ## Estructura de Datos XML 
 ### Descripción 
 Este proyecto utiliza XML para estructurar [descripción del tipo de datos]. 
