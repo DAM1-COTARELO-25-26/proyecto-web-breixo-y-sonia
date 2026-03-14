@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/menu-to-html.xsl"?>
+<destinos>
+  <destino id="1" tipo="playa">
+    <nombre>Maldivas</nombre>
+    <pais>Maldivas</pais>
+    <clima>tropical</clima>
+    <precio_base>1200</precio_base>
+    <descripcion>Paradisíaco archipiélago con playas blancas</descripcion>
+    <puntuacion>9</puntuacion>
+    <vegetariano>false</vegetariano>
+  </destino>
+  
+  <destino id="2" tipo="montaña">
+    <nombre>Machu Picchu</nombre>
+    <pais>Perú</pais>
+    <clima>templado</clima>
+    <precio_base>800</precio_base>
+    <descripcion>Antigua ciudadela inca entre las montañas</descripcion>
+    <puntuacion>10</puntuacion>
+    <vegetariano>true</vegetariano>
+  </destino>
+  
+  <destino id="3" tipo="ciudad">
+    <nombre>París</nombre>
+    <pais>Francia</pais>
+    <clima>temperado</clima>
+    <precio_base>950</precio_base>
+    <descripcion>La ciudad de la luz y el romance</descripcion>
+    <puntuacion>9</puntuacion>
+    <vegetariano>false</vegetariano>
+  </destino>
+  
+  <destino id="4" tipo="playa">
+    <nombre>Bali</nombre>
+    <pais>Indonesia</pais>
+    <clima>tropical</clima>
+    <precio_base>650</precio_base>
+    <descripcion>Isla exótica con templos ancestrales</descripcion>
+    <puntuacion>8</puntuacion>
+    <vegetariano>true</vegetariano>
+  </destino>
+  
+  <destino id="5" tipo="desierto">
+    <nombre>Sahara</nombre>
+    <pais>Marruecos</pais>
+    <clima>árido</clima>
+    <precio_base>750</precio_base>
+    <descripcion>Vastísimo desierto con dunas de arena dorada</descripcion>
+    <puntuacion>8</puntuacion>
+    <vegetariano>true</vegetariano>
+  </destino>
+  
+  <destino id="6" tipo="montaña">
+    <nombre>Kilimanjaro</nombre>
+    <pais>Tanzania</pais>
+    <clima>variable</clima>
+    <precio_base>1100</precio_base>
+    <descripcion>Montaña más alta de África con vistas espectaculares</descripcion>
+    <puntuacion>9</puntuacion>
+    <vegetariano>false</vegetariano>
+  </destino>
+</destinos>
